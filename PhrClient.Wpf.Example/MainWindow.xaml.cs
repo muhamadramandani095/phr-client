@@ -44,7 +44,7 @@ namespace PhrClient.Wpf.Example
             var context = sender as ClientContext;
             if (messageArgs.Type == MessageType.PelayananEcgId)
             {
-                context.HasReadMessage(messageArgs.Message);
+                context?.HasReadMessage(messageArgs.Message);
             }
         }
 
